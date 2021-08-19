@@ -1,0 +1,419 @@
+/* GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  background: rgb(212, 202, 202);
+  line-height: 1.7;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* HEADER SECTION */
+
+header {
+  background: url("../img/code.jpeg");
+  margin: auto;
+  height: 450px;
+  position: relative;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: inherit;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+  z-index: 100;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  line-height: 40px;
+  z-index: 100;
+}
+
+.nav-display {
+  display: none;
+  flex-direction: column;
+  background: green;
+  width: 200px;
+  height: 100vh;
+  padding: 50px 10px;
+  position: fixed;
+  right: 0;
+}
+
+.nav-item {
+  padding: 5px 5px;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.753);
+}
+
+.nav-item:hover {
+  background: rgb(6, 163, 6);
+}
+
+.overlay a {
+  color: inherit;
+}
+
+.btn {
+  background: green;
+  width: 180px;
+  text-align: center;
+  padding: 5px 30px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.overlay .tagline {
+  text-transform: uppercase;
+  margin: 7px 0 20px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: -10px;
+}
+
+.soc_icons {
+  background: gray;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 5px;
+  transition: all 0.2s;
+}
+
+.soc_icons:hover {
+  border-radius: 30px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  box-shadow: 5px 5px 30px 8px rgba(0, 0, 0, 0.712);
+  margin-top: 60px;
+  padding: 30px 40px;
+  text-align: justify;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skill_container {
+  background: #fff;
+  box-shadow: 5px 5px 30px 8px rgba(0, 0, 0, 0.712);
+  margin-top: 20px;
+  padding: 20px 20px;
+}
+
+.card {
+  width: 60%;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: green;
+}
+
+.card:nth-of-type(even) {
+  margin-right: 0px;
+}
+
+.level {
+  background-color: rgba(144, 238, 144, 0.575);
+  width: 100%;
+  height: 5px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.lev_html::before,
+.lev_css::before,
+.lev_js::before,
+.lev_bootstrap::before,
+.lev_react::before,
+.lev_php::before {
+  content: "";
+  position: absolute;
+  background: green;
+  height: inherit;
+}
+
+.lev_html::before {
+  width: 90%;
+}
+
+.lev_css::before {
+  width: 85%;
+}
+
+.lev_js::before {
+  width: 80%;
+}
+
+.lev_bootstrap::before {
+  width: 75%;
+}
+
+.lev_react::before {
+  width: 30%;
+}
+
+.lev_php::before {
+  width: 70%;
+}
+
+/* EXPERIENCE SECTION  */
+
+.experience .row {
+  margin-bottom: 20px;
+}
+.experience h2 {
+  margin-bottom: 30px;
+}
+
+.date {
+  width: 20%;
+  vertical-align: middle;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+}
+
+.date .company-name {
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.date-explained {
+  width: 80%;
+  padding: 10px 20px 30px;
+  background: #fff;
+}
+
+.date-explained h3 {
+  margin-bottom: 20px;
+}
+
+.date-explained li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.date-explained li::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  background: green;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border-radius: 50px;
+}
+
+/* CONTACT SECTION */
+.contact {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  width: 40%;
+  margin: auto;
+  transition: all 0.19s;
+}
+form:hover {
+  width: 70%;
+  transition: all 0.3s;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.1s;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  box-shadow: 2px 2px 30px gray;
+  transition: all 0.2s;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact button {
+  cursor: pointer;
+  background: green;
+  color: #fff;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer img {
+  width: 50px;
+}
+
+/* BACK TO TOP BUTTON */
+.topBtn i {
+  background: gray;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  transition: all 0.8s;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 425px) {
+  .btn {
+    font-size: 14px;
+    width: 120px;
+    padding: 5px 15px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about,
+  .skills {
+    width: 95%;
+  }
+
+  .about p {
+    text-align: left;
+  }
+
+  /* SKILLS SECTION */
+  .skills .row {
+    flex-direction: column;
+  }
+
+  .skills .card {
+    width: 100%;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience .date,
+  .experience .date-explained {
+    width: 100%;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact {
+    margin-top: 50px;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  /* BACK TO TOP BUTTON */
+  .topBtn i {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background: rgba(128, 128, 128, 0.781);
+  }
+}
