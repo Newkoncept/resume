@@ -433,7 +433,7 @@ footer img {
 @media screen and (max-width: 425px) {
 	/* GENERAL STYLING */
 	h1 {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	
 	.btn {
