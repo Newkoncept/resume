@@ -61,8 +61,20 @@ li {
 	list-style: none;
 }
 
-/* HEADER SECTION */
+.message {
+	width: 100%;
+	padding: 10px 20px;
+	text-align: center;
+	border-radius: 20px;
+	color: #fff;
+	margin-bottom: 10px;
+}
 
+.error {
+	background: red;
+}
+
+/* HEADER SECTION */
 header {
 	background: url("../img/code.jpeg");
 	margin: auto;
@@ -401,6 +413,13 @@ textarea {
 	color: #fff;
 }
 
+.contact img {
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
 /* FOOTER SECTION */
 footer {
 	background: #fff;
@@ -436,7 +455,7 @@ footer img {
 	h1 {
 		font-size: 1.8em;
 	}
-	
+
 	.btn {
 		font-size: 14px;
 		width: 120px;
