@@ -431,6 +431,11 @@ footer img {
 
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 425px) {
+	/* GENERAL STYLING */
+	h1 {
+		font-size: 2em;
+	}
+	
 	.btn {
 		font-size: 14px;
 		width: 120px;
