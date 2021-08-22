@@ -3,7 +3,7 @@ const topBtn = document.querySelector(".topBtn i");
 const hamburger = document.querySelector(".hamburger i");
 
 // Event Listeners
-document.addEventListener("DOMContentLoaded", displayNav);
+document.addEventListener("DOMContentLoaded", navBarDisplay);
 document.addEventListener("DOMContentLoaded", displayBtn);
 document.addEventListener("scroll", displayBtn);
 document.addEventListener("scroll", navBarDisplay);
